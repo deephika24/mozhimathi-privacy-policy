@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozhimathi Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-20px, -20px) rotate(360deg); }
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .language-toggle {
+            margin: 30px;
+            text-align: center;
+        }
+
+        .toggle-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin: 0 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .toggle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .toggle-btn.active {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            transform: scale(1.05);
+        }
+
+        .content {
+            padding: 40px;
+            animation: slideIn 0.8s ease-out 0.2s both;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #4facfe;
+            margin: 30px 0 15px 0;
+            font-size: 1.4rem;
+            border-left: 4px solid #4facfe;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #667eea;
+            margin: 25px 0 10px 0;
+            font-size: 1.2rem;
+        }
+
+        p, li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .acknowledgment {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #4facfe;
+        }
+
+        .acknowledgment h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .tamil-text {
+            font-family: 'Tamil MN', 'Noto Sans Tamil', sans-serif;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .toggle-btn {
+                padding: 10px 20px;
+                margin: 5px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mozhimathi</h1>
+            <p>Privacy Policy & Terms of Service</p>
+        </div>
+
+        <div class="language-toggle">
+            <button class="toggle-btn active" onclick="showLanguage('english')">English</button>
+            <button class="toggle-btn" onclick="showLanguage('tamil')">தமிழ்</button>
+        </div>
+
+        <div class="content">
+            <!-- English Content -->
+            <div id="english" class="language-section active">
+                <h2>Privacy Policy for Mozhimathi</h2>
+                
+                <p><span class="highlight">Mozhimathi</span> is an intelligent subtitle generation and translation application designed to make video content more accessible by providing automated subtitle generation for Tanglish (Tamil-English mixed) content with multi-language output support. Your privacy is important to us.</p>
+
+                <h3>1. Data Collection and Storage</h3>
+                <p>Your video uploads, subtitle preferences, and processing history are securely stored using Firebase services (RealtimeDatabase and Firebase Storage). We implement industry-standard security measures to protect your personal data. Your data is not shared with any unauthorized parties.</p>
+
+                <h3>2. Video Processing</h3>
+                <p>Videos uploaded to மொழிமதி are processed using advanced AI models including:</p>
+                <ul>
+                    <li>Whisper model for English speech transcription</li>
+                    <li>Google Translate services for multi-language translation</li>
+                    <li>Speech recognition libraries for Tanglish processing</li>
+                </ul>
+                <p>Processed videos and generated subtitles are stored securely and are only accessible to you through your authenticated account.</p>
+
+                <h3>3. Backend Infrastructure</h3>
+                <p>மொழிமதி utilizes Google Cloud Platform (GCP) services to host our backend servers that handle all AI processing operations. Our backend infrastructure includes:</p>
+                <ul>
+                    <li><strong>GCP Compute Engine:</strong> Hosts our main application servers that process video uploads and coordinate subtitle generation</li>
+                    <li><strong>AI Model Processing:</strong> All Whisper model operations and speech recognition tasks are performed on our GCP-hosted backend servers</li>
+                    <li><strong>Secure Communication:</strong> All data transmission between the mobile app and our GCP backend servers is encrypted using industry-standard protocols</li>
+                </ul>
+                <p>This backend infrastructure ensures reliable, scalable, and secure processing of your videos while maintaining high performance and data protection standards.</p>
+
+                <h3>4. Permissions</h3>
+                <p>மொழிமதி may request the following permissions:</p>
+                <ul>
+                    <li><strong>Storage Access:</strong> To access and upload video files from your device</li>
+                    <li><strong>Download Folder Access:</strong> To save generated subtitle files (SRT/VTT formats) to your device's download folder for easy access and sharing</li>
+                    <li><strong>Internet Access:</strong> For communication with our backend servers and cloud services</li>
+                </ul>
+                <p>These permissions are used solely for the app's core functionality of subtitle generation, translation, and file management. Download folder access is specifically required to provide you with the generated subtitle files on your device.</p>
+
+                <h3>5. Authentication</h3>
+                <p>We use Firebase Authentication with Gmail provider for secure user authentication. No passwords are stored on our servers, and authentication is handled through Google's secure infrastructure.</p>
+
+                <h3>6. No Third-Party Data Sharing</h3>
+                <p>We do not sell, trade, or share your personal data, videos, or generated subtitles with any third-party services beyond the essential services (Firebase for storage, Google Cloud Platform for backend processing, Google Translate for translation) required for app functionality.</p>
+
+                <h3>7. Data Retention</h3>
+                <p>Your videos and subtitles are retained in your account until you choose to delete them. You have full control over your data and can request deletion at any time.</p>
+
+                <div class="contact-info">
+                    <h3>8. Contact Us</h3>
+                    <p>For questions, suggestions, or feedback about privacy or the app, feel free to contact us:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:deephika50@gmail.com">deephika50@gmail.com</a></li>
+                        <li>Email: <a href="mailto:sharrolinegladiaak17@gmail.com">sharrolinegladiaak17@gmail.com</a></li>
+                        <li>Email: <a href="mailto:siddharthmr65622@gmail.com">siddharthmr65622@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tamil Content -->
+            <div id="tamil" class="language-section tamil-text">
+                <h2>மொழிமதி தனியுரிமைக் கொள்கை</h2>
+                
+                <p><span class="highlight">மொழிமதி</span> என்பது வீடியோ உள்ளடக்கத்தை மேலும் அணுகக்கூடியதாக மாற்றுவதற்காக வடிவமைக்கப்பட்ட ஒரு புத்திசாலி வசன உருவாக்கம் மற்றும் மொழிபெயர்ப்பு செயலியாகும். இது தங்கிலிஷ் (தமிழ்-ஆங்கிலம் கலந்த) உள்ளடக்கத்திற்கான தானியங்கி வசன உருவாக்கத்தை பல மொழி வெளியீட்டு ஆதரவுடன் வழங்குகிறது. உங்கள் தனியுரிமை எங்களுக்கு மிகவும் முக்கியம்.</p>
+
+                <h3>1. தரவு சேகரிப்பு மற்றும் சேமிப்பு</h3>
+                <p>உங்கள் வீடியோ பதிவேற்றங்கள், வசன விருப்பங்கள் மற்றும் செயலாக்க வரலாறு Firebase சேவைகள் (RealtimeDatabase மற்றும் Firebase Storage) பயன்படுத்தி பாதுகாப்பாக சேமிக்கப்படுகின்றன. உங்கள் தனிப்பட்ட தரவைப் பாதுகாப்பதற்கு தொழில்துறை தரமான பாதுகாப்பு நடவடிக்கைகளை நாங்கள் செயல்படுத்துகிறோம். உங்கள் தரவு அங்கீகரிக்கப்படாத எந்தத் தரப்பினருடனும் பகிரப்படாது.</p>
+
+                <h3>2. வீடியோ செயலாக்கம்</h3>
+                <p>மொழிமதியில் பதிவேற்றப்பட்ட வீடியோக்கள் பின்வரும் மேம்பட்ட AI மாதிரிகளைப் பயன்படுத்தி செயலாக்கப்படுகின்றன:</p>
+                <ul>
+                    <li>விஸ்பர் மாதிரி மூலம் ஆங்கில பேச்சு டிரான்ஸ்கிரிப்ஷன்</li>
+                    <li>பல்மொழி மொழிபெயர்ப்பிற்காக Google Translate சேவைகள்</li>
+                    <li>தங்கிலிஷ் செயலாக்கத்திற்காக பேச்சு அடையாள நூலகங்கள்</li>
+                </ul>
+                <p>செயலாக்கப்பட்ட வீடியோக்கள் மற்றும் உருவாக்கப்பட்ட வசனங்கள் பாதுகாப்பாக சேமிக்கப்பட்டு, உங்கள் அங்கீகரிக்கப்பட்ட கணக்கு மூலம் மட்டுமே உங்களால் அணுகப்படும்.</p>
+
+                <h3>3. பின்பக்க உள்கட்டமைப்பு</h3>
+                <p>அனைத்து AI செயலாக்க நடவடிக்கைகளையும் கையாளும் எங்கள் பின்பக்க சேவையகங்களை ஹோஸ்ட் செய்ய மொழிமதி Google Cloud Platform (GCP) சேவைகளைப் பயன்படுத்துகிறது. எங்கள் பின்பக்க உள்கட்டமைப்பில் பின்வருவன அடங்கும்:</p>
+                <ul>
+                    <li><strong>GCP Compute Engine:</strong> வீடியோ பதிவேற்றங்களைச் செயலாக்கி வசன உருவாக்கத்தை ஒருங்கிணைக்கும் எங்கள் முக்கிய செயலகக் சேவையகங்களை ஹோஸ்ட் செய்கிறது</li>
+                    <li><strong>AI மாதிரி செயலாக்கம்:</strong> அனைத்து விஸ்பர் மாதிரி நடவடிக்கைகள் மற்றும் பேச்சு அடையாள பணிகள் எங்கள் GCP-ஹோஸ்ட் செய்யப்பட்ட பின்பக்க சேவையகங்களில் செய்யப்படுகின்றன</li>
+                    <li><strong>பாதுகாப்பான தொடர்பு:</strong> மொபைல் செயலி மற்றும் எங்கள் GCP பின்பக்க சேவையகங்களுக்கு இடையேயான அனைத்து தரவு பரிமாற்றமும் தொழில்துறை தரமான நெறிமுறைகளைப் பயன்படுத்தி குறியாக்கம் செய்யப்படுகிறது</li>
+                </ul>
+                <p>இந்த பின்பக்க உள்கட்டமைப்பு உயர் செயல்திறன் மற்றும் தரவு பாதுகாப்பு தரங்களைப் பராமரிக்கும் அதே வேளையில் உங்கள் வீடியோக்களின் நம்பகமான, அளவிடக்கூடிய மற்றும் பாதுகாப்பான செயலாக்கத்தை உறுதிசெய்கிறது.</p>
+
+                <h3>4. அனுமதிகள்</h3>
+                <p>மொழிமதி பின்வரும் அனுமதிகளைக் கோரலாம்:</p>
+                <ul>
+                    <li><strong>சேமிப்பக அணுகல்:</strong> உங்கள் சாதனத்திலிருந்து வீடியோ கோப்புகளை அணுகவும் பதிவேற்றவும்</li>
+                    <li><strong>பதிவிறக்க கோப்புறை அணுகல்:</strong> எளிய அணுகல் மற்றும் பகிர்விற்காக உருவாக்கப்பட்ட வசன கோப்புகளை (SRT/VTT வடிவங்கள்) உங்கள் சாதனத்தின் பதிவிறக்க கோப்புறையில் சேமிக்க</li>
+                    <li><strong>இணைய அணுகல்:</strong> எங்கள் பின்பக்க சேவையகங்கள் மற்றும் கிளவுட் சேவைகளுடன் தொடர்புகொள்ள</li>
+                </ul>
+                <p>இந்த அனுமதிகள் வசன உருவாக்கம், மொழிபெயர்ப்பு மற்றும் கோப்பு மேலாண்மை என்ற செயலியின் முக்கிய செயல்பாட்டிற்காக மட்டுமே பயன்படுத்தப்படுகின்றன. உங்கள் சாதனத்தில் உருவாக்கப்பட்ட வசன கோப்புகளை உங்களுக்கு வழங்குவதற்கு பதிவிறக்க கோப்புறை அணுகல் குறிப்பாக தேவை.</p>
+
+                <h3>5. அங்கீகாரம்</h3>
+                <p>பாதுகாப்பான பயனர் அங்கீகாரத்திற்காக Gmail வழங்குநருடன் Firebase Authentication ஐப் பயன்படுத்துகிறோம். எங்கள் சேவையகங்களில் எந்த கடவுச்சொற்களும் சேமிக்கப்படாது, மேலும் அங்கீகாரம் Google இன் பாதுகாப்பான உள்கட்டமைப்பு மூலம் கையாளப்படுகிறது.</p>
+
+                <h3>6. மூன்றாம் தரப்பு தரவு பகிர்வு இல்லை</h3>
+                <p>செயலி செயல்பாட்டிற்கு தேவையான அத்தியாவசிய சேவைகளைத் (சேமிப்பிற்காக Firebase, பின்பக்க செயலாக்கத்திற்காக Google Cloud Platform, மொழிபெயர்ப்பிற்காக Google Translate) தவிர, உங்கள் தனிப்பட்ட தரவு, வீடியோக்கள் அல்லது உருவாக்கப்பட்ட வசனங்களை நாங்கள் எந்த மூன்றாம் தரப்பு சேவைகளுக்கும் விற்கவோ, வர்த்தகம் செய்யவோ அல்லது பகிரவோ மாட்டோம்.</p>
+
+                <h3>7. தரவு தக்கவைப்பு</h3>
+                <p>உங்கள் வீடியோக்கள் மற்றும் வசனங்கள் நீங்கள் அவற்றை நீக்க தேர்வு செய்யும் வரை உங்கள் கணக்கில் தக்கவைக்கப்படும். உங்கள் தரவின் மீது உங்களுக்கு முழு கட்டுப்பாடு உள்ளது மற்றும் எந்த நேரத்திலும் நீக்குதலைக் கோரலாம்.</p>
+
+                <div class="contact-info">
+                    <h3>8. தொடர்புக்கு</h3>
+                    <p>தனியுரிமை அல்லது செயலி பற்றிய கேள்விகள், பரிந்துரைகள் அல்லது கருத்துகளுக்கு, எங்களைத் தொடர்பு கொள்ள:</p>
+                    <ul>
+                        <li>மின்னஞ்சல்: <a href="mailto:deephika50@gmail.com">deephika50@gmail.com</a></li>
+                        <li>மின்னஞ்சல்: <a href="mailto:sharrolinegladiaak17@gmail.com">sharrolinegladiaak17@gmail.com</a></li>
+                        <li>மின்னஞ்சல்: <a href="mailto:siddharthmr65622@gmail.com">siddharthmr65622@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all language sections
+            document.querySelectorAll('.language-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected language section
+            document.getElementById(language).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
